@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f81047c246480f75cc1dddacecec0dd",
+    "content-hash": "78efe22cb6c2f1d47ec548e6f9329c11",
     "packages": [
         {
             "name": "awurth/slim-helpers",
@@ -208,21 +208,25 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.8.2",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe"
+                "reference": "f3300fcd1bbf67d205b52217c75d0f7d6a8c47ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
-                "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/f3300fcd1bbf67d205b52217c75d0f7d6a8c47ff",
+                "reference": "f3300fcd1bbf67d205b52217c75d0f7d6a8c47ff",
                 "shasum": ""
             },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "^7.1 || ^8.0"
+            },
             "require-dev": {
-                "codeclimate/php-test-reporter": "^0.1.2",
-                "phpunit/phpunit": "^4.7"
+                "phpunit/phpunit": "^6.5 || ^8.5"
             },
             "type": "library",
             "autoload": {
@@ -232,7 +236,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -241,65 +245,11 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2017-12-06T15:31:26+00:00"
-        },
-        {
-            "name": "facebook/graph-sdk",
-            "version": "5.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facebook/php-graph-sdk.git",
-                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b"
+            "support": {
+                "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/1.0.0"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/2d8250638b33d73e7a87add65f47fabf91f8ad9b",
-                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.4|^7.0"
-            },
-            "require-dev": {
-                "guzzlehttp/guzzle": "~5.0",
-                "mockery/mockery": "~0.8",
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client",
-                "paragonie/random_compat": "Provides a better CSPRNG option in PHP 5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Facebook\\": "src/Facebook/"
-                },
-                "files": [
-                    "src/Facebook/polyfills.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Facebook Platform"
-            ],
-            "authors": [
-                {
-                    "name": "Facebook",
-                    "homepage": "https://github.com/facebook/php-graph-sdk/contributors"
-                }
-            ],
-            "description": "Facebook SDK for PHP",
-            "homepage": "https://github.com/facebook/php-graph-sdk",
-            "keywords": [
-                "facebook",
-                "sdk"
-            ],
-            "time": "2018-12-11T22:56:31+00:00"
+            "time": "2026-09-01T09:35:47+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -486,39 +436,38 @@
         },
         {
             "name": "hybridauth/hybridauth",
-            "version": "v2.12.0",
+            "version": "v3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "cfeee3fa948e2e17abc19a8d6e0ecbe637940c45"
+                "reference": "5f799ed5fd35e21f06cf42310f9f6ed3f7bbe7df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/cfeee3fa948e2e17abc19a8d6e0ecbe637940c45",
-                "reference": "cfeee3fa948e2e17abc19a8d6e0ecbe637940c45",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/5f799ed5fd35e21f06cf42310f9f6ed3f7bbe7df",
+                "reference": "5f799ed5fd35e21f06cf42310f9f6ed3f7bbe7df",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
-                "facebook/graph-sdk": "^5.4",
-                "paypal/rest-api-sdk-php": "*",
-                "php": ">=5.2.0"
+                "php": "^5.4 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "squizlabs/php_codesniffer": "2.*"
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^6.5 || ^8.0 || ^12.0"
+            },
+            "suggest": {
+                "firebase/php-jwt": "Needed to support Apple provider",
+                "phpseclib/phpseclib": "Needed to support Apple provider"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Hybrid": "hybridauth/"
-                },
-                "classmap": [
-                    "hybridauth/Hybrid"
-                ]
+                "psr-4": {
+                    "Hybridauth\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "(MIT or GPL-3.0+)"
+                "MIT"
             ],
             "authors": [
                 {
@@ -526,20 +475,26 @@
                     "email": "hybridauth@gmail.com"
                 }
             ],
-            "description": "Open source social sign on PHP library.",
-            "homepage": "http://hybridauth.sourceforge.net",
+            "description": "PHP Social Authentication Library",
+            "homepage": "https://hybridauth.github.io",
             "keywords": [
+                "Authentication",
                 "OpenId",
+                "api",
+                "apple",
+                "authorization",
                 "facebook",
                 "google",
-                "hybridauth",
-                "login",
                 "oauth",
                 "social",
-                "twitter",
-                "yahoo"
+                "twitter"
             ],
-            "time": "2018-08-10T12:36:54+00:00"
+            "support": {
+                "gitter": "https://gitter.im/hybridauth/hybridauth",
+                "issues": "https://github.com/hybridauth/hybridauth/issues",
+                "source": "https://github.com/hybridauth/hybridauth/tree/v3.13.0"
+            },
+            "time": "2026-04-02T19:11:26+00:00"
         },
         {
             "name": "league/color-extractor",
@@ -923,119 +878,59 @@
             "time": "2018-07-04T16:31:37+00:00"
         },
         {
-            "name": "paypal/rest-api-sdk-php",
-            "version": "1.13.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
-                "reference": "192e217beed14c8e75624e821fdc8ec51e2a21f5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/192e217beed14c8e75624e821fdc8ec51e2a21f5",
-                "reference": "192e217beed14c8e75624e821fdc8ec51e2a21f5",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.3.0",
-                "psr/log": "^1.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "PayPal": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "PayPal",
-                    "homepage": "https://github.com/paypal/rest-api-sdk-php/contributors"
-                }
-            ],
-            "description": "PayPal's PHP SDK for REST APIs",
-            "homepage": "http://paypal.github.io/PayPal-PHP-SDK/",
-            "keywords": [
-                "payments",
-                "paypal",
-                "rest",
-                "sdk"
-            ],
-            "time": "2017-11-13T19:21:59+00:00"
-        },
-        {
             "name": "phpmailer/phpmailer",
-            "version": "v5.2.27",
+            "version": "v6.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "dde1db116511aa4956389d75546c5be4c2beb2a6"
+                "reference": "a5b5c43e50b7fba655f793ad27303cd74c57363c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/dde1db116511aa4956389d75546c5be4c2beb2a6",
-                "reference": "dde1db116511aa4956389d75546c5be4c2beb2a6",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/a5b5c43e50b7fba655f793ad27303cd74c57363c",
+                "reference": "a5b5c43e50b7fba655f793ad27303cd74c57363c",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
-                "php": ">=5.0.0"
+                "ext-filter": "*",
+                "ext-hash": "*",
+                "php": ">=5.5.0"
             },
             "require-dev": {
-                "doctrine/annotations": "1.2.*",
-                "jms/serializer": "0.16.*",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "4.8.*",
-                "symfony/debug": "2.8.*",
-                "symfony/filesystem": "2.8.*",
-                "symfony/translation": "2.8.*",
-                "symfony/yaml": "2.8.*",
-                "zendframework/zend-cache": "2.5.1",
-                "zendframework/zend-config": "2.5.1",
-                "zendframework/zend-eventmanager": "2.5.1",
-                "zendframework/zend-filter": "2.5.1",
-                "zendframework/zend-i18n": "2.5.1",
-                "zendframework/zend-json": "2.5.1",
-                "zendframework/zend-math": "2.5.1",
-                "zendframework/zend-serializer": "2.5.*",
-                "zendframework/zend-servicemanager": "2.5.*",
-                "zendframework/zend-stdlib": "2.5.1"
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "doctrine/annotations": "^1.2",
+                "phpcompatibility/php-compatibility": "^9.3.5",
+                "roave/security-advisories": "dev-latest",
+                "squizlabs/php_codesniffer": "^3.5.6",
+                "yoast/phpunit-polyfills": "^0.2.0"
             },
             "suggest": {
-                "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
+                "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "class.phpmailer.php",
-                    "class.phpmaileroauth.php",
-                    "class.phpmaileroauthgoogle.php",
-                    "class.smtp.php",
-                    "class.pop3.php",
-                    "extras/EasyPeasyICS.php",
-                    "extras/ntlm_sasl_client.php"
-                ]
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-2.1"
+                "LGPL-2.1-only"
             ],
             "authors": [
                 {
-                    "name": "Jim Jagielski",
-                    "email": "jimjag@gmail.com"
-                },
-                {
                     "name": "Marcus Bointon",
                     "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
                 },
                 {
                     "name": "Andy Prevost",
@@ -1046,7 +941,17 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2018-11-15T22:32:31+00:00"
+            "support": {
+                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Synchro",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-16T14:33:43+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -1794,5 +1699,6 @@
     "platform": {
         "php": ">=5.6"
     },
-    "platform-dev": []
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
